@@ -56,13 +56,6 @@
 
   
   <url>
-    <loc>https://aoggg.github.io.com/tags/latex/</loc>
-    <lastmod>2023-04-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aoggg.github.io.com/tags/ouo/</loc>
     <lastmod>2023-04-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -71,6 +64,13 @@
   
   <url>
     <loc>https://aoggg.github.io.com/tags/ouououo/</loc>
+    <lastmod>2023-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aoggg.github.io.com/tags/latex/</loc>
     <lastmod>2023-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

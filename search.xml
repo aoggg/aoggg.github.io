@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ouob</title>
+    <url>/2023/04/28/ouob/</url>
+    <content><![CDATA[<h1 id="ouob">ouob</h1>
+<p>窩只是想要測試一下可不可以用中文 應該可以啦</p>
+]]></content>
+      <tags>
+        <tag>ouo</tag>
+        <tag>ouououo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>latex</title>
     <url>/2023/04/28/latex/</url>
     <content><![CDATA[<h1 id="latex-語法筆記"><span class="math inline">\(\LaTeX\)</span>
@@ -23,6 +34,14 @@ XeLaTeX</li>
 <p>斜體的話就是 AutoFakeSlant</p>
 <h2 id="版面設置">版面設置</h2>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;geometry&#125;</span><br><span class="line"><span class="keyword">\geometry</span>&#123;</span><br><span class="line">    a4paper, <span class="comment">% a4 紙</span></span><br><span class="line">    margin = 2cm <span class="comment">% 上下左右邊界各 2cm</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="行距設定">行距設定</h3>
+<p>1.5 倍行距 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\linespread</span>&#123;1.5&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="項目符號自定義">項目符號自定義</h3>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;titlesec&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;titletoc&#125;</span><br><span class="line"><span class="comment">% \titleformat&#123;command&#125;[shape]&#123;format&#125;&#123;label&#125;&#123;sep&#125;&#123;before-code&#125;[after-code]</span></span><br><span class="line"><span class="comment">% centering 置中 / bfseries 粗體 / </span></span><br><span class="line"><span class="keyword">\titleformat</span>&#123;<span class="keyword">\section</span>&#125;[hang]&#123;<span class="keyword">\centering</span><span class="keyword">\bfseries</span><span class="keyword">\Large</span>&#125;&#123;&#125;&#123;0pt&#125;&#123;&#125;[]</span><br><span class="line"></span><br><span class="line"><span class="comment">% 多層級項目縮排</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\titlespacing</span>&#123;<span class="keyword">\subsection</span>&#125; &#123;0em&#125;&#123;0em&#125;&#123;0em&#125;</span><br><span class="line"><span class="keyword">\titlespacing</span>&#123;<span class="keyword">\subsubsection</span>&#125; &#123;2em&#125;&#123;0em&#125;&#123;0em&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="自動換行-縮排設定">自動換行 / 縮排設定</h3>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\XeTeXlinebreaklocale</span> &quot;zh&quot;</span><br><span class="line"><span class="keyword">\XeTeXlinebreakskip</span> = 0pt plus 1pt</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;indentfirst&#125; </span><br><span class="line"><span class="keyword">\setlength</span><span class="keyword">\parindent</span>&#123;2em&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;setspace&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="超連結設定">超連結設定</h2>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xcolor&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;url&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 連結顏色設定</span></span><br><span class="line"><span class="keyword">\usepackage</span>[bookmarks,breaklinks,colorlinks=true,allcolors=blue]&#123;hyperref&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 連結自動換行</span></span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\def</span><span class="keyword">\UrlAlphabet</span>&#123;<span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\a</span><span class="keyword">\do</span><span class="keyword">\b</span><span class="keyword">\do</span><span class="keyword">\c</span><span class="keyword">\do</span><span class="keyword">\d</span><span class="keyword">\do</span><span class="keyword">\e</span><span class="keyword">\do</span><span class="keyword">\f</span><span class="keyword">\do</span><span class="keyword">\g</span><span class="keyword">\do</span><span class="keyword">\h</span><span class="keyword">\do</span><span class="keyword">\i</span><span class="keyword">\do</span><span class="keyword">\j</span><span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\k</span><span class="keyword">\do</span><span class="keyword">\l</span><span class="keyword">\do</span><span class="keyword">\m</span><span class="keyword">\do</span><span class="keyword">\n</span><span class="keyword">\do</span><span class="keyword">\o</span><span class="keyword">\do</span><span class="keyword">\p</span><span class="keyword">\do</span><span class="keyword">\q</span><span class="keyword">\do</span><span class="keyword">\r</span><span class="keyword">\do</span><span class="keyword">\s</span><span class="keyword">\do</span><span class="keyword">\t</span><span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\u</span><span class="keyword">\do</span><span class="keyword">\v</span><span class="keyword">\do</span><span class="keyword">\w</span><span class="keyword">\do</span><span class="keyword">\x</span><span class="keyword">\do</span><span class="keyword">\y</span><span class="keyword">\do</span><span class="keyword">\z</span><span class="keyword">\do</span><span class="keyword">\A</span><span class="keyword">\do</span><span class="keyword">\B</span><span class="keyword">\do</span><span class="keyword">\C</span><span class="keyword">\do</span><span class="keyword">\D</span><span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\E</span><span class="keyword">\do</span><span class="keyword">\F</span><span class="keyword">\do</span><span class="keyword">\G</span><span class="keyword">\do</span><span class="keyword">\H</span><span class="keyword">\do</span><span class="keyword">\I</span><span class="keyword">\do</span><span class="keyword">\J</span><span class="keyword">\do</span><span class="keyword">\K</span><span class="keyword">\do</span><span class="keyword">\L</span><span class="keyword">\do</span><span class="keyword">\M</span><span class="keyword">\do</span><span class="keyword">\N</span><span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\O</span><span class="keyword">\do</span><span class="keyword">\P</span><span class="keyword">\do</span><span class="keyword">\Q</span><span class="keyword">\do</span><span class="keyword">\R</span><span class="keyword">\do</span><span class="keyword">\S</span><span class="keyword">\do</span><span class="keyword">\T</span><span class="keyword">\do</span><span class="keyword">\U</span><span class="keyword">\do</span><span class="keyword">\V</span><span class="keyword">\do</span><span class="keyword">\W</span><span class="keyword">\do</span><span class="keyword">\X</span><span class="comment">%</span></span><br><span class="line">      <span class="keyword">\do</span><span class="keyword">\Y</span><span class="keyword">\do</span><span class="keyword">\Z</span>&#125;</span><br><span class="line"><span class="keyword">\def</span><span class="keyword">\UrlDigits</span>&#123;<span class="keyword">\do</span><span class="keyword">\1</span><span class="keyword">\do</span><span class="keyword">\2</span><span class="keyword">\do</span><span class="keyword">\3</span><span class="keyword">\do</span><span class="keyword">\4</span><span class="keyword">\do</span><span class="keyword">\5</span><span class="keyword">\do</span><span class="keyword">\6</span><span class="keyword">\do</span><span class="keyword">\7</span><span class="keyword">\do</span><span class="keyword">\8</span><span class="keyword">\do</span><span class="keyword">\9</span><span class="keyword">\do</span><span class="keyword">\0</span>&#125;</span><br><span class="line"><span class="keyword">\g@addto@macro</span>&#123;<span class="keyword">\UrlBreaks</span>&#125;&#123;<span class="keyword">\UrlOrds</span>&#125;</span><br><span class="line"><span class="keyword">\g@addto@macro</span>&#123;<span class="keyword">\UrlBreaks</span>&#125;&#123;<span class="keyword">\UrlAlphabet</span>&#125;</span><br><span class="line"><span class="keyword">\g@addto@macro</span>&#123;<span class="keyword">\UrlBreaks</span>&#125;&#123;<span class="keyword">\UrlDigits</span>&#125;</span><br><span class="line"><span class="keyword">\makeatother</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>latex</tag>
@@ -55,16 +74,5 @@ href="https://hexo.io/docs/generating.html">Generating</a></p>
 <p>More info: <a
 href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>ouob</title>
-    <url>/2023/04/28/ouob/</url>
-    <content><![CDATA[<h1 id="ouob">ouob</h1>
-<p>窩只是想要測試一下可不可以用中文 應該可以啦</p>
-]]></content>
-      <tags>
-        <tag>ouo</tag>
-        <tag>ouououo</tag>
-      </tags>
   </entry>
 </search>
