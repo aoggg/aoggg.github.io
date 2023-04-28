@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f0b4ff;
+  background: #7a5e34;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1258,11 +1258,11 @@ pre .javascript .function {
   color: #fc6423;
 }
 .sidebar-nav .sidebar-nav-active {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #c48888;
+  color: #c48888;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #fc6423;
+  color: #c48888;
 }
 .sidebar-panel {
   display: none;
@@ -1330,14 +1330,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #c48888;
+  color: #c48888;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #c48888;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #c48888;
 }
 .site-state {
   display: flex;

@@ -45,6 +45,7 @@ XeLaTeX</li>
 <h3 id="要自己上傳字型的">要自己上傳字型的</h3>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;fontspec&#125;</span><br><span class="line"><span class="keyword">\setCJKmainfont</span>&#123;mingliu.ttc&#125;</span><br></pre></td></tr></table></figure>
 <p>如果要設定粗體的話</p>
+<span id="more"></span>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\setCJKmainfont</span>[BoldFont=NotoSerifTC-Bold.otf]&#123;NotoSerifTC-Medium.otf&#125;</span><br></pre></td></tr></table></figure>
 <p>如果沒有粗體的 otf / ttc 檔但是需要粗體的話</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\setCJKmainfont</span>[AutoFakeBold = 3]&#123;mingliu.ttc&#125;</span><br></pre></td></tr></table></figure>
